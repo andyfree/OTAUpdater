@@ -1,0 +1,105 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kryten2k35.otaupdater"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    
+
+    <application
+        android:name=".UpdaterApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/RagnarTheme.Dark">
+        
+        <service
+		  android:name=".tasks.UpdateDownloadService"
+		  android:icon="@drawable/ic_launcher"
+		  android:label="@string/app_name">
+		</service> 
+		
+        <receiver android:name=".receivers.BootReceiver" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+		
+        <receiver android:name=".receivers.BackgroundReceiver" />
+        
+        <receiver android:name=".receivers.UpdateReceiver">
+		    <intent-filter>
+		        <action android:name="updater.action.intent.UPDATE_BACKGROUND" />
+		    </intent-filter>
+		</receiver>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".activities.CheckActivity" 
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+			 android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name=".activities.AvailableActivity" 
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+			 android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        
+         <activity
+            android:name=".activities.SettingsActivity" 
+            android:label="@string/preferences_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity" 
+            android:label="@string/about"
+            android:parentActivityName=".activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+		<activity
+            android:name=".utils.DirectoryPicker" 
+            android:label="@string/directory_picker_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+        </activity>
+        
+		<activity
+        	android:name="com.google.android.gms.ads.AdActivity"
+        	android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+    </application>
+
+</manifest>

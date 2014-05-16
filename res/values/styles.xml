@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="UpdaterListElement">
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:padding">8dp</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:background">?attr/backgroundSelector</item>
+	</style>
+	
+	<style name="ActionBar.Solid.Dark" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_dark</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_dark</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_dark</item>
+        <item name="progressBarStyle">@style/ProgressBar.Dark</item>
+    </style>
+    
+	<style name="ActionBar.Solid.LightDarkAction" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_dark</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_dark</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_dark</item>
+        <item name="progressBarStyle">@style/ProgressBar.Dark</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Dark" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_dark</item>
+        <item name="progressBarStyle">@style/ProgressBar.Dark</item>
+    </style>
+	
+    <style name="PopupMenu.Dark" parent="@style/Widget.AppCompat.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_dark</item>	
+    </style>
+	
+    <style name="DropDownListView.Dark" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_dark</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Dark" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_dark</item>
+    </style>
+	
+    <style name="DropDownNav.Dark" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_dark</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_dark</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_dark</item>
+    </style>
+    
+    <style name="ProgressBar.Dark" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_dark</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Dark" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_dark</item>
+    </style>
+    
+    <style name="Theme.Dark.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Dark</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Dark</item>
+    </style>
+    
+    <style name="ActionBar.Solid.Light" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_light</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_light</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_light</item>
+        <item name="progressBarStyle">@style/ProgressBar.Light</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Light" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_light</item>
+        <item name="progressBarStyle">@style/ProgressBar.Light</item>
+    </style>
+	
+    <style name="PopupMenu.Light" parent="@style/Widget.AppCompat.Light.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_light</item>	
+    </style>
+	
+    <style name="DropDownListView.Light" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_light</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Light" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_light</item>
+    </style>
+	
+    <style name="DropDownNav.Light" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_light</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_light</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_light</item>
+    </style>
+    
+    <style name="ProgressBar.Light" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_light</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Light" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_light</item>
+    </style>
+    
+    <style name="Theme.Light.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Light</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Light</item>
+    </style>
+    
+    <style name="CheckBox" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/btn_check_holo_dark</item>
+  </style>
+  
+    <style name="CheckBox.Light" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/btn_check_holo_light</item>
+  </style>
+</resources>

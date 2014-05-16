@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:updater="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?attr/helpIcon" 
+        android:id="@+id/updater_menuinfo" 
+        android:orderInCategory="99" 
+        android:title="@string/help" 
+        updater:showAsAction="always" />
+    <item android:icon="?attr/settingsIcon" 
+        android:id="@+id/updater_menusettings" 
+        android:orderInCategory="100" 
+        android:title="@string/settings" 
+        updater:showAsAction="always" />
+</menu>

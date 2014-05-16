@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="UltimaTheme.Dark">
+	    <attr name="helpIcon" format="reference" />
+		<attr name="moreIconWidget" format="reference"/>
+		<attr name="alertIcon" format="reference"/>
+		<attr name="settingsIcon" format="reference"/>
+		<attr name="downloadIcon" format="reference" />
+		<attr name="downloadExtraIcon" format="reference" />
+		<attr name="downloadGappsIcon" format="reference" />
+		<attr name="backgroundSelector" format="reference" />
+		<attr name="separator" format="reference" />
+		<attr name="browserIcon" format="reference"/>
+		<attr name="donateIcon" format="reference"/>
+		
+		<attr name="colorHoloRed" format="color" />
+		<attr name="colorHoloGreen" format="color" />
+		<attr name="colorHoloBlue" format="color" />
+	</declare-styleable>
+	<declare-styleable name="NumberPreference">
+	    <attr name="min" format="integer" />
+	    <attr name="max" format="integer" />
+	    <attr name="def" format="integer" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeCompat.Light" parent="@style/Theme.AppCompat.Light">
+        <item name="helpIcon">@drawable/ic_about_light</item>
+        <item name="moreIconWidget">@drawable/ic_btn_round_more_light</item>
+		<item name="alertIcon">@drawable/ic_alert_light</item>
+		<item name="settingsIcon">@drawable/ic_settings_light</item>		
+		<item name="downloadIcon">@drawable/ic_download_light</item>
+		<item name="downloadExtraIcon">@drawable/ic_download_extras_light</item>
+		<item name="downloadGappsIcon">@drawable/ic_download_gapps_light</item>
+		
+    	<item name="backgroundSelector">@drawable/list_selector_holo_light</item>
+    	<item name="separator">@color/separator_light</item>
+    	
+    	<item name="android:actionBarItemBackground">@drawable/selectable_background_light</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Light</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Light</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Light</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Light</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_light</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+    </style>
+    <style name="ThemeCompat.Dark" parent="@style/Theme.AppCompat">
+        <item name="helpIcon">@drawable/ic_about_dark</item>
+        <item name="moreIconWidget">@drawable/ic_btn_round_more_dark</item>
+		<item name="alertIcon">@drawable/ic_alert_dark</item>
+		<item name="settingsIcon">@drawable/ic_settings_dark</item>
+		<item name="downloadIcon">@drawable/ic_download_dark</item>
+		<item name="downloadExtraIcon">@drawable/ic_download_extras_dark</item>
+		<item name="downloadGappsIcon">@drawable/ic_download_gapps_dark</item>
+		
+    	<item name="backgroundSelector">@drawable/list_selector_holo_dark</item>
+    	<item name="separator">@color/separator_dark</item>
+        
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_dark</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Dark</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Dark</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Dark</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Dark</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dark</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_dark</item>
+    </style>
+    <style name="ThemeCompat.Light.DarkAction" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="helpIcon">@drawable/ic_about_dark</item>
+        <item name="moreIconWidget">@drawable/ic_btn_round_more_light</item>
+		<item name="alertIcon">@drawable/ic_alert_dark</item>
+		<item name="settingsIcon">@drawable/ic_settings_dark</item>
+		<item name="downloadIcon">@drawable/ic_download_light</item>
+		<item name="downloadExtraIcon">@drawable/ic_download_extras_light</item>
+		<item name="downloadGappsIcon">@drawable/ic_download_gapps_light</item>
+		
+    	<item name="backgroundSelector">@drawable/list_selector_holo_light</item>
+    	<item name="separator">@color/separator_light</item>
+    	
+    	<item name="android:actionBarItemBackground">@drawable/selectable_background_dark</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Dark</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Dark</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Dark</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.LightDarkAction</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dark</item>        
+        <item name="android:actionBarWidgetTheme">@style/Theme.Dark.Widget</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+    </style>
+</resources>
