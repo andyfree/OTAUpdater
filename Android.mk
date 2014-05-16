@@ -8,7 +8,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v7-appcompat
 
-LOCAL_PACKAGE_NAME := UltimaOTA
+LOCAL_PACKAGE_NAME := OTAUpdater
 LOCAL_CERTIFICATE := shared
 
 include $(BUILD_PACKAGE)
